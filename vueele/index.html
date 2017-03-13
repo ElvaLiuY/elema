@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="screen-orientation"content="portrait">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="full-screen" content="yes">
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/vue.js" ></script>
+		<script type="text/javascript" src="js/vue-router.js" ></script>
+		<script src="js/jquery2.2.2.js"></script>
+		<script type="text/javascript" src="js/data.js" ></script>
+		<script>
+			document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 16 + "px";
+		</script>
+	</head>
+	<body>
+		<div id="app">
+			<my-header></my-header>
+			<div class="m-nav">
+				 <router-link to="/product">
+				 	<span class="u-nav-item">商品</span></router-link>
+  				 <router-link to="/comments"><span class="u-nav-item">评价</span></router-link>
+  				 <router-link to="/business"><span class="u-nav-item">商家</span></router-link>
+			</div>
+			<router-view class='m-cont'></router-view>
+		</div>
+		<script type="text/javascript" src="js/header.js" ></script>
+		<script type="text/javascript" src="js/product.js" ></script>
+		<script>
+				'use strict'	
+				const comments = { template: '<div>好奇心这么重，咋啥都想看呢</div>' }
+				const business = { template: '<div>还点，还点。。。</div>' }
+				const routes = [
+				 { path:'/', redirect: '/product'},
+				{ path: '/product', component: product },
+					  { path: '/comments', component:comments },
+					  { path: '/business', component:business }
+					]
+				const router = new VueRouter({
+//					 mode: 'history',
+					 routes // （缩写）相当于 routes: routes
+				})
+				
+			new Vue({
+				data:{
+					"data":Data
+				},
+				components:{
+					'my-header':childheader
+				},
+				
+				  router
+				}).$mount('#app')
+				
+				$(".m-cont").height($("body").height()-$(".g-head").height()-$(".m-nav").height()-$(".m-count").height());
+				$("#prolist").height($(".m-cont").height())
+			
+			</script>
+	</body>
+</html>

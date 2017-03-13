@@ -1,0 +1,279 @@
+@rex:16/360rem;
+body,p,h6,ul,li,input{
+     margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+html{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+
+	width:100%;
+	height: 100%;
+//	position: absolute;
+//	left:0;
+//	top:0;
+//	right:0;
+//	bottom: 0;
+	overflow: hidden;
+	font-size: 12*@rex;
+	line-height: 1;
+	color: white;
+}
+#app{
+    width:100%;
+    height: 100%;
+}
+.g-head{
+	height: 136*@rex;
+	background-color: rgba(0,0,0,0.6);
+	position: relative;
+	.m-head{
+	    padding:20*@rex;
+	    font-size:12*@rex;
+	   position: relative;
+	    p{
+	        height: 22*@rex;
+	    }
+	    .z-brand{
+	         font-size:12*@rex;
+	        display: inline-block;
+	        width: 30*@rex;
+	        height: 18*@rex;
+	        background-color: red;
+	        vertical-align: middle;
+	        text-align: center;
+	        line-height:18*@rex; ;
+	    }
+	    .z-sale{
+	          font-size:12*@rex;
+            display: inline-block;
+//          width: 30*@rex;
+            padding: 0 2*@rex;
+            margin-right: 4*@rex;
+            height: 18*@rex;
+            background-color: white;
+            color: red;
+            vertical-align: middle;
+            text-align: center;
+            line-height:18*@rex; ;
+	    }
+	}
+	.z-name{
+	    font-size:16*@rex;
+	}
+	img{
+	    width:66*@rex;
+	    margin-right: 20*@rex;
+	}
+	.m-announcement{
+	   
+	    width: 100%;
+	    height: 30*@rex;
+	    background-color: rgba(0,0,0,0.5);
+	    p{
+	        height: 30*@rex;
+	        max-width: 290*@rex;
+	        line-height: 30*@rex;
+	        display: inline-block;
+	         overflow: hidden;
+	        text-overflow: ellipsis;
+	           vertical-align: middle;
+	       
+	       white-space: nowrap;
+	    }
+	    span{
+	          font-size:12*@rex;
+            display: inline-block;
+            width: 30*@rex;
+            padding: 2*@rex;
+            margin:0 5*@rex;
+            background-color: white;
+            color: black;
+            vertical-align: middle;
+            text-align: center;
+	    }
+	}
+}
+.m-nav{
+    width: 100%;
+    height: 40*@rex;
+    color:black;
+    font-size: 0;
+    font-weight: bold;
+    .u-nav-item{
+            font-size: 14*@rex;
+            height: 40*@rex;
+            line-height: 40*@rex;
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+
+    }
+}
+.g-fl{
+    float: left;
+}
+.g-fr{
+    float: right;
+}
+.g-clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.blur {    
+    -webkit-filter: blur(30px); /* Chrome, Opera */
+       -moz-filter: blur(30px);
+        -ms-filter: blur(30px);    
+            filter: blur(30px);    
+}
+.u-mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+     background-image: url(http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg);
+     background-size: 100%;
+     z-index: -9999;
+}
+.m-cont{
+    height: 100%;
+    overflow: hidden;
+    font-size: 16*@rex;
+    color: black;
+}
+.m-pro-nav{
+    width:80*@rex;
+    float: left;
+//  background: pink;
+background-color: #f3f5f7;
+//  span{
+//      display: block;
+//      text-align: center;
+//  }
+}
+.m-pro-wrap{
+    height: 100%;
+    overflow: auto;
+    margin-left:80*@rex;
+//  background: orange;
+    box-sizing: border-box;
+    border-top: 1*@rex solid #dbdee1;
+    line-height: 20*@rex;
+    h6{
+     background-color: #f3f5f7;
+     height: 24*@rex;
+     line-height: 24*@rex;   
+     border-left: 2*@rex solid #DBDEE1;
+     padding-left: 16*@rex;
+     color:#93999f;
+     font-weight: normal;
+    }
+    ul{
+        padding:0 16*@rex;
+        li{
+            padding: 20*@rex 0;
+            border-bottom: 1*@rex solid #e6e7e8;
+        }
+    }
+    img{
+        width:58*@rex;
+        margin-right:10*@rex;
+    }
+    .u-food-name{
+        font-size: 16*@rex;
+    }
+    .u-food-more{
+        font-size: 12*@rex;
+        color: #93999f;
+    }
+    .u-food-price{
+        font-size: 16*@rex;
+        color: #FF0000;
+    }
+}
+.m-pro-nav li{
+//  display: table;
+    text-align: center;
+    padding-left: 10*@rex;
+    box-sizing: border-box;
+}
+.m-pro-nav .z-active{
+    background-color: white;
+}
+.u-order{
+    width:60*@rex;
+    height: 54*@rex;
+    font-size: 12*@rex;
+     vertical-align:middle;   
+    display:table-cell;   
+    border-bottom: 1*@rex solid #dbdee1;
+    
+}
+#prolist{
+    height: 100%;
+    overflow: scroll;
+}
+.prolist{
+    height: 100%;
+}
+.m-btns{
+    position: absolute;
+     font-size: 16*@rex;
+        line-height:20*@rex;
+        bottom: 0;
+        right: 0;
+//        width:20*@rex;
+//      height: 20*@rex;
+    span{
+        display: inline-block;
+        width:20*@rex;
+        height: 20*@rex;
+        color: white;
+        text-align: center;
+        background-color: #00a0dc;
+        border-radius: 50%;
+       
+        font-weight: bold;
+        vertical-align: middle;
+//      position: absolute;
+    }
+    input{
+//       position: absolute;
+        width:30*@rex;
+        height: 20*@rex;
+        outline: none;
+        border: none;
+        font-size: 16*@rex;
+        line-height:20*@rex;
+        text-align: center;
+          vertical-align: middle;
+    }
+}
+
+.m-food-item{
+      position: relative;
+}
+//.u-btn-reduce{
+//  display: none;
+//}
+
+
+.m-count{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 48*@rex;
+    background-color: #141d27;
+    color: white;
+    text-align: center;
+    line-height: 48*@rex;
+}

@@ -1,0 +1,255 @@
+body,
+p,
+h6,
+ul,
+li,
+input {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 0.53333333rem;
+  line-height: 1;
+  color: white;
+}
+#app {
+  width: 100%;
+  height: 100%;
+}
+.g-head {
+  height: 6.04444444rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.g-head .m-head {
+  padding: 0.88888889rem;
+  font-size: 0.53333333rem;
+  position: relative;
+}
+.g-head .m-head p {
+  height: 0.97777778rem;
+}
+.g-head .m-head .z-brand {
+  font-size: 0.53333333rem;
+  display: inline-block;
+  width: 1.33333333rem;
+  height: 0.8rem;
+  background-color: red;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.g-head .m-head .z-sale {
+  font-size: 0.53333333rem;
+  display: inline-block;
+  padding: 0 0.08888889rem;
+  margin-right: 0.17777778rem;
+  height: 0.8rem;
+  background-color: white;
+  color: red;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.g-head .z-name {
+  font-size: 0.71111111rem;
+}
+.g-head img {
+  width: 2.93333333rem;
+  margin-right: 0.88888889rem;
+}
+.g-head .m-announcement {
+  width: 100%;
+  height: 1.33333333rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.g-head .m-announcement p {
+  height: 1.33333333rem;
+  max-width: 12.88888889rem;
+  line-height: 1.33333333rem;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.g-head .m-announcement span {
+  font-size: 0.53333333rem;
+  display: inline-block;
+  width: 1.33333333rem;
+  padding: 0.08888889rem;
+  margin: 0 0.22222222rem;
+  background-color: white;
+  color: black;
+  vertical-align: middle;
+  text-align: center;
+}
+.m-nav {
+  width: 100%;
+  height: 1.77777778rem;
+  color: black;
+  font-size: 0;
+  font-weight: bold;
+}
+.m-nav .u-nav-item {
+  font-size: 0.62222222rem;
+  height: 1.77777778rem;
+  line-height: 1.77777778rem;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+.g-fl {
+  float: left;
+}
+.g-fr {
+  float: right;
+}
+.g-clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.blur {
+  -webkit-filter: blur(30px);
+  /* Chrome, Opera */
+  -moz-filter: blur(30px);
+  -ms-filter: blur(30px);
+  filter: blur(30px);
+}
+.u-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg);
+  background-size: 100%;
+  z-index: -9999;
+}
+.m-cont {
+  height: 100%;
+  overflow: hidden;
+  font-size: 0.71111111rem;
+  color: black;
+}
+.m-pro-nav {
+  width: 3.55555556rem;
+  float: left;
+  background-color: #f3f5f7;
+}
+.m-pro-wrap {
+  height: 100%;
+  overflow: auto;
+  margin-left: 3.55555556rem;
+  box-sizing: border-box;
+  border-top: 0.04444444rem solid #dbdee1;
+  line-height: 0.88888889rem;
+}
+.m-pro-wrap h6 {
+  background-color: #f3f5f7;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  border-left: 0.08888889rem solid #DBDEE1;
+  padding-left: 0.71111111rem;
+  color: #93999f;
+  font-weight: normal;
+}
+.m-pro-wrap ul {
+  padding: 0 0.71111111rem;
+}
+.m-pro-wrap ul li {
+  padding: 0.88888889rem 0;
+  border-bottom: 0.04444444rem solid #e6e7e8;
+}
+.m-pro-wrap img {
+  width: 2.57777778rem;
+  margin-right: 0.44444444rem;
+}
+.m-pro-wrap .u-food-name {
+  font-size: 0.71111111rem;
+}
+.m-pro-wrap .u-food-more {
+  font-size: 0.53333333rem;
+  color: #93999f;
+}
+.m-pro-wrap .u-food-price {
+  font-size: 0.71111111rem;
+  color: #FF0000;
+}
+.m-pro-nav li {
+  text-align: center;
+  padding-left: 0.44444444rem;
+  box-sizing: border-box;
+}
+.m-pro-nav .z-active {
+  background-color: white;
+}
+.u-order {
+  width: 2.66666667rem;
+  height: 2.4rem;
+  font-size: 0.53333333rem;
+  vertical-align: middle;
+  display: table-cell;
+  border-bottom: 0.04444444rem solid #dbdee1;
+}
+#prolist {
+  height: 100%;
+  overflow: scroll;
+}
+.prolist {
+  height: 100%;
+}
+.m-btns {
+  position: absolute;
+  font-size: 0.71111111rem;
+  line-height: 0.88888889rem;
+  bottom: 0;
+  right: 0;
+}
+.m-btns span {
+  display: inline-block;
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  color: white;
+  text-align: center;
+  background-color: #00a0dc;
+  border-radius: 50%;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.m-btns input {
+  width: 1.33333333rem;
+  height: 0.88888889rem;
+  outline: none;
+  border: none;
+  font-size: 0.71111111rem;
+  line-height: 0.88888889rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.m-food-item {
+  position: relative;
+}
+.m-count {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 2.13333333rem;
+  background-color: #141d27;
+  color: white;
+  text-align: center;
+  line-height: 2.13333333rem;
+}
