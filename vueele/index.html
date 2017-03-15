@@ -28,7 +28,9 @@
   				 <router-link to="/comments"><span class="u-nav-item">评价</span></router-link>
   				 <router-link to="/business"><span class="u-nav-item">商家</span></router-link>
 			</div>
-			<router-view class='m-cont'></router-view>
+			 <keep-alive>
+				<router-view class='m-cont'></router-view>
+			 </keep-alive>
 		</div>
 		<script type="text/javascript" src="js/header.js" ></script>
 		<script type="text/javascript" src="js/product.js" ></script>
